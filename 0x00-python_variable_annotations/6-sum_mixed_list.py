@@ -12,7 +12,7 @@ if python < 3.8:
 from typing import List, Union
 
 
-def sum_mixed_list(mxd_lst: List[Union[float, int]]) -> float:
+def sum_mixed_list(mxd_lst: List[Union[int, float]]) -> float:
     """
     info: type annotation for python version 3.8 & below
     you must import List from typing module
@@ -21,4 +21,4 @@ def sum_mixed_list(mxd_lst: List[Union[float, int]]) -> float:
     input_list: list of floats
     returns: float
     """
-    return sum(mxd_lst)
+    return float(sum(mxd_lst))
