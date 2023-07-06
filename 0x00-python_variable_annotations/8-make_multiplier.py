@@ -23,5 +23,5 @@ def make_multiplier(multiplier: float) -> Callable[[float], float]:
         input: float
         returns the square of multiplier
         """
-        return multiplier * multiplier
+        return float(multiplier * multiplier)
     return fun
