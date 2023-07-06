@@ -18,6 +18,10 @@ def make_multiplier(multiplier: float) -> Callable[[float], float]:
     multiplier: float
     returns: a function(input:float) return a float(input*input)
     """
-    def fun(multiplier: float) -> Callable[[float], float]:
+    def fun(multiplier: float) -> float:
+        """
+        input: float
+        returns the square of multiplier
+        """
         return multiplier * multiplier
     return fun
