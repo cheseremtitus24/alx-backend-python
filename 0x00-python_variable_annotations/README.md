@@ -1,0 +1,1 @@
+Python annotated Types -> Synomymous to typescript
