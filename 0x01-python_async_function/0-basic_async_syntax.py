@@ -16,9 +16,10 @@ the following functions:
 import random
 import asyncio
 
-async def wait_random(max_delay: int = 10) ->float:
+
+async def wait_random(max_delay: int = 10) -> float:
     """Returns a Random Number After a Delay timer
-    
+
     Parameters
     ----------
     max_delay : int
@@ -29,6 +30,6 @@ async def wait_random(max_delay: int = 10) ->float:
     float
         a randomly generated floating point value
     """
-     
+
     await asyncio.sleep(max_delay)
-    return random.uniform(0,10)
+    return random.uniform(0, 10)
