@@ -34,6 +34,6 @@ async def wait_n(n: int, max_delay: int) -> list[float]:
     wait_random = __import__('0-basic_async_syntax').wait_random
 
     # spawns wait_random function n-times with specified max_delay
-    return sorted(await asyncio.gather(
+    return await asyncio.gather(
         *(wait_random(max_delay) for i in range(n))
-    ))
+    )
