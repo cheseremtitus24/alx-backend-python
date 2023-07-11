@@ -4,7 +4,7 @@
 This implementation is 2x faster than an equivalent implementation as an
 asynchronous iterator according to PEP 525.
 
-script requires built in asyncio module, typing.Generator and random module imports
+script requires built in asyncio module, typing.AsyncGenerator and random module imports
 and uses asynchronous non-blocking sleep to mimic a producer function/subroutine.
 
 This file can also be imported as a module and contains
@@ -16,10 +16,10 @@ the following functions:
 
 import asyncio
 import random
-from typing import Generator
+from typing import AsyncGenerator
 
 
-async def async_generator() -> Generator[float, None, None]:
+async def async_generator() -> AsyncGenerator[float, None]:
     """Generates Random number Sequences between 0 and 10
 
     Returns
