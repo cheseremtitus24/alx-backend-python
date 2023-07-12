@@ -29,4 +29,4 @@ async def async_generator() -> AsyncGenerator[float, None]:
     """
     for i in range(10):
         yield random.uniform(0, 10)
-        await asyncio.sleep(.5)
+        await asyncio.sleep(1)
